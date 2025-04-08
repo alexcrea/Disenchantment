@@ -39,7 +39,7 @@ public class EcoEnchants_v1_21_R1 implements ISupportedPlugin {
     }
 
     public void activate() {
-        Bukkit.getScheduler().runTask(plugin, this::delayActivation);
+        Bukkit.getScheduler().runTaskLater(plugin, this::delayActivation, 1L);
     }
 
     // Just activate but later bc eco enchant is a... weirdly constructed plugin...
